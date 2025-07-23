@@ -40,3 +40,12 @@ Before your turn, computer:
 
 After your turn, key is revealed so you can verify HMAC → proof that the move was not changed.
 
+## 📂 Files
+
+- `index.js` – Main game logic
+- `README.md` – You are here!
+- `package.json` – Project config
+- `package-lock.json` – Dependency lock
+- `node_modules/` – Installed libraries
+
+---
