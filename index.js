@@ -34,7 +34,6 @@ Example: node index.js 2,2,4,4,9,9 6,8,1,1,8,6 7,5,3,7,5,3`);
     return args.map((arg, i) => {
       const nums = arg.split(',').map(Number);
 
-      // ✅ Allow any number of faces, but require at least 2
       if (nums.length < 2 || nums.some(isNaN)) {
         throw new Error(`Invalid dice at position ${i + 1}. Each dice must have at least 2 integers.
 Example: node index.js 2,2,4,4,9,9 6,8,1,1,8,6 7,5,3,7,5,3`);
@@ -48,7 +47,7 @@ Example: node index.js 2,2,4,4,9,9 6,8,1,1,8,6 7,5,3,7,5,3`);
 // Secure random + HMAC generator
 class SecureRandom {
   static generateKey() {
-    return crypto.randomBytes(32); // 256 bits
+    return crypto.randomBytes(32); 
   }
 
   static generateNumber(max) {
